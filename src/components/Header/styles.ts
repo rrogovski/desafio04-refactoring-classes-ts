@@ -5,14 +5,19 @@ export const Container = styled.div`
   padding: 30px 0;
 
   header {
-    width: 1280px;
+    width: 100vw;
     margin: 0 auto;
     padding: 0 0 160px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    img {
+      margin-left: 35px;
+    }
+
     nav {
+      margin-right: 50px;
       div {
         button {
           font-weight: 600;
@@ -37,6 +42,21 @@ export const Container = styled.div`
             margin: 0 auto;
           }
         }
+      }
+    }
+  }
+  @media screen and (max-width: 799px) {
+    header {
+      flex-direction: column;
+      padding: 0 0 100px;
+
+      img {
+        margin: 0px;
+      }
+
+
+      nav {
+        margin: 25px 0 0;
       }
     }
   }
